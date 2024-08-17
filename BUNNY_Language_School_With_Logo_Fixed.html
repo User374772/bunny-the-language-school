@@ -1,0 +1,167 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>|BUNNY| The Language School</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f8ff;
+            color: #333;
+        }
+        header {
+            background-color: #1e90ff;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            font-size: 2em;
+        }
+        header img {
+            max-width: 150px;
+            margin-bottom: 10px;
+        }
+        section {
+            padding: 20px;
+            margin: 10px 0;
+        }
+        h2 {
+            color: #1e90ff;
+        }
+        .words-section {
+            background-color: #e6f7ff;
+            padding: 15px;
+            border-radius: 10px;
+        }
+        .words-section h3 {
+            color: #8a2be2;
+        }
+        .word {
+            cursor: pointer;
+            padding: 5px;
+            border: 1px solid #1e90ff;
+            border-radius: 5px;
+            margin: 5px;
+            display: inline-block;
+            transition: background-color 0.3s ease;
+        }
+        .word:hover {
+            background-color: #1e90ff;
+            color: white;
+        }
+        footer {
+            background-color: #1e90ff;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+        .contact-info a {
+            color: #f0f8ff;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="bunny_logo.png" alt="BUNNY Logo">
+        |BUNNY| The Language School
+    </header>
+
+    <section>
+        <h2>About Us</h2>
+        <p><strong>English:</strong> At |BUNNY| The Language School, we offer personalized English and German language instruction. 
+            Whether you're starting from scratch or looking to improve your grammar, vocabulary, or overall language skills, we’re here to help you achieve your goals.</p>
+        <p><strong>Ukrainian:</strong> У |BUNNY| Школі Мов ми пропонуємо індивідуальне навчання англійської та німецької мов. 
+            Незалежно від того, чи ви починаєте з нуля, чи хочете покращити свою граматику, словниковий запас або загальні мовні навички, ми допоможемо вам досягти ваших цілей.</p>
+    </section>
+
+    <section class="words-section">
+        <h2>Daily Words</h2>
+        <h3>English Words</h3>
+        <div id="english-words">
+            <span class="word" onclick="showTranslation(this)">hello</span>
+            <span class="word" onclick="showTranslation(this)">book</span>
+            <span class="word" onclick="showTranslation(this)">computer</span>
+            <span class="word" onclick="showTranslation(this)">music</span>
+            <span class="word" onclick="showTranslation(this)">friend</span>
+            <span class="word" onclick="showTranslation(this)">table</span>
+            <span class="word" onclick="showTranslation(this)">school</span>
+            <span class="word" onclick="showTranslation(this)">city</span>
+            <span class="word" onclick="showTranslation(this)">food</span>
+            <span class="word" onclick="showTranslation(this)">water</span>
+        </div>
+        <h3>German Words</h3>
+        <div id="german-words">
+            <span class="word" onclick="showTranslation(this)">hallo</span>
+            <span class="word" onclick="showTranslation(this)">buch</span>
+            <span class="word" onclick="showTranslation(this)">computer</span>
+            <span class="word" onclick="showTranslation(this)">musik</span>
+            <span class="word" onclick="showTranslation(this)">freund</span>
+            <span class="word" onclick="showTranslation(this)">tisch</span>
+            <span class="word" onclick="showTranslation(this)">schule</span>
+            <span class="word" onclick="showTranslation(this)">stadt</span>
+            <span class="word" onclick="showTranslation(this)">essen</span>
+            <span class="word" onclick="showTranslation(this)">wasser</span>
+        </div>
+    </section>
+
+    <section>
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:synyavskasofi2008@gmail.com">synyavskasofi2008@gmail.com</a></p>
+        <p>Telegram Channel: <a href="https://t.me/bunny_thelanguageschool" target="_blank">https://t.me/bunny_thelanguageschool</a></p>
+        <p>Instagram: <a href="https://www.instagram.com/bunny.the.language.school?igsh=MXByNjdsMmNvc3gzNQ==" id="instagram-link" target="_blank">bunny.the.language.school</a></p>
+        <p>YouTube: <a href="https://youtube.com/@bunny_thelanguageschool?feature=shared" target="_blank">bunny_thelanguageschool</a></p>
+    </section>
+
+    <footer>
+        <div class="contact-info">
+            <p>&copy; 2024 |BUNNY| The Language School</p>
+            <p>Contact us: <a href="mailto:synyavskasofi2008@gmail.com">synyavskasofi2008@gmail.com</a></p>
+            <p><a href="https://t.me/bunny_thelanguageschool" target="_blank">Telegram Channel</a></p>
+            <p><a href="https://www.instagram.com/bunny.the.language.school?igsh=MXByNjdsMmNvc3gzNQ==" id="footer-instagram-link" target="_blank">Instagram</a></p>
+            <p><a href="https://youtube.com/@bunny_thelanguageschool?feature=shared" target="_blank">YouTube</a></p>
+        </div>
+    </footer>
+
+    <script>
+        function showTranslation(element) {
+            const translations = {
+                "hello": "привіт",
+                "book": "книга",
+                "computer": "комп'ютер",
+                "music": "музика",
+                "friend": "друг",
+                "table": "стіл",
+                "school": "школа",
+                "city": "місто",
+                "food": "їжа",
+                "water": "вода",
+                "hallo": "привіт",
+                "buch": "книга",
+                "computer": "комп'ютер",
+                "musik": "музика",
+                "freund": "друг",
+                "tisch": "стіл",
+                "schule": "школа",
+                "stadt": "місто",
+                "essen": "їжа",
+                "wasser": "вода"
+            };
+
+            const word = element.innerText;
+            const translation = translations[word];
+
+            if (translation) {
+                element.innerText = translation;
+                const utterance = new SpeechSynthesisUtterance(word);
+                speechSynthesis.speak(utterance);
+            }
+        }
+    </script>
+
+</body>
+</html>
